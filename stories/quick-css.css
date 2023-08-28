@@ -1,0 +1,34 @@
+/* here contain temp css */
+.h-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.m-block {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.m-block__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 60em) { /* 960px */
+  .h-grid {
+    gap: 1.5rem;
+  }
+
+  .h-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .h-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .m-block {
+    gap: 3rem;
+  }
+}
